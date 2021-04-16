@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+html {
+    background-color: #deded8;
+    font-family: trebuchet, geneva, sans-serif;
+  }
+
+  /* Body Styles */
+  body {
+    margin: 0;
+  }
+  article, aside, footer, header {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+
+  header {
+    background-color: lightblue;
+    height: 15vh;
+  }
+  aside {
+    background-color: rgb(253, 120, 120);
+  }
+  
+/* Nav Styles */
+  nav {
+    display: flex;
+    background-color:papayawhip;
+    padding: 10px 0;
+    flex-flow: row wrap;
+  }
+
+  nav p {
+    flex: 1 1 200px;
+    text-align: center;
+    background: papayawhip;
+    color: black;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-decoration: none;
+  }
+  footer {
+  background-color: lightblue;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: burlywood;
+  }
+  nav, header {
+    order: -1;
+  }
+  article {
+    flex: 75%;
+  }
+  aside {
+    flex: 25%;
+  }
+
+  /*article styling */
+
+  article {
+    display: flex;
+    background-color:rgb(197, 165, 113);
+    padding: 10px 0;
+    flex-flow: row wrap;
+  }
+
+  article p {
+    flex: 1 1 150px;
+    border: 3px dotted red ;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(117, 180, 117);
+    font-weight: bold;
+  }
+
+    
+  /*Different media stylings*/
+  /*for mobile screen usually*/
+  
+  @media screen and (max-width: 480px) {
+    nav p {
+        flex: 1 1 250px;
+    }
+      aside{
+          display: none;
+      }
+
+      article p {
+        background-color: pink;
+      }
+
+  }
+
+  @media screen and (min-width: 481px) {
+    nav p {
+        flex: 1 1 100px;
+    }
+
+    article p {
+      background-color: yellow;
+    }
+
+}
+
+  /*  for larger screen */
+  @media screen and (min-width: 769px) {
+
+
+    article p {
+      background-color: rgb(115, 226, 115);
+    }
+  }
+  
